@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodCrew Catering</title>
+
+<style>
+
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    position:fixed;
+    width:100%;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    z-index:1000;
+}
+
+.logo {
+    font-size:26px;
+    font-weight:bold;
+}
+
+.logo span {
+    color:#ff3c3c;
+}
+
+nav a {
+    margin:0 15px;
+    text-decoration:none;
+    color:white;
+}
+
+.btn-nav {
+    background:#ff3c3c;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1555992336-03a23c6b3b06?q=80&w=2070') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:0 60px;
+    position:relative;
+}
+
+.hero::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    top:0;
+    left:0;
+}
+
+.hero-content {
+    position:relative;
+    max-width:600px;
+}
+
+.hero h1 {
+    font-size:60px;
+}
+
+.hero span {
+    color:#ffb703;
+}
+
+.hero p {
+    margin:20px 0;
+    font-size:18px;
+}
+
+.btn {
+    background:#ff3c3c;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===== SEKCJE ===== */
+section {
+    padding:80px 40px;
+    text-align:center;
+}
+
+.section-bg {
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
+    position:relative;
+}
+
+.section-bg::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    top:0;
+    left:0;
+}
+
+.section-content {
+    position:relative;
+}
+
+/* ===== KARTY ===== */
+.cards {
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card {
+    width:300px;
+    border-radius:15px;
+    overflow:hidden;
+    background:#111;
+}
+
+.card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3 {
+    padding:15px;
+}
+
+/* ===== MENU ===== */
+.menu {
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu-item {
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+}
+
+/* ===== GALERIA ===== */
+.gallery {
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gallery img {
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* ===== KONTAKT ===== */
+.contact {
+    background:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1') center/cover;
+    position:relative;
+}
+
+.contact::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    top:0;
+    left:0;
+}
+
+.contact-content {
+    position:relative;
+}
+
+input, textarea {
+    padding:10px;
+    margin:10px;
+    width:250px;
+    border:none;
+    border-radius:8px;
+}
+
+footer {
+    background:black;
+    padding:20px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Food<span>Crew</span></div>
+<nav>
+<a href="#oferta">Oferta</a>
+<a href="#menu">Menu</a>
+<a href="#galeria">Galeria</a>
+<a href="#kontakt">Kontakt</a>
+<a class="btn-nav">Zamów</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Catering na <span>Wysokim Poziomie</span></h1>
+<p>Dla firm, eventów i imprez prywatnych</p>
+<button class="btn">Poznaj ofertę</button>
+</div>
+</section>
+
+<!-- USŁUGI -->
+<section id="oferta" class="section-bg">
+<div class="section-content">
+<h2>Nasze Usługi</h2>
+
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+<h3>Imprezy prywatne</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555244162-803834f70033">
+<h3>Eventy firmowe</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288">
+<h3>Wesela i duże eventy</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+<h2>Przykładowe Menu</h2>
+
+<div class="menu">
+<div class="menu-item">Burgery premium</div>
+<div class="menu-item">Finger food</div>
+<div class="menu-item">Catering grillowy</div>
+<div class="menu-item">Bufet ciepły</div>
+<div class="menu-item">Desery i słodki stół</div>
+</div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+<h2>Galeria</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9">
+<img src="https://images.unsplash.com/photo-1529042410759-befb1204b468">
+<img src="https://images.unsplash.com/photo-1514516870926-2059892a6b4d">
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="contact">
+<div class="contact-content">
+<h2>Kontakt</h2>
+
+<input placeholder="Imię">
+<input placeholder="Email"><br>
+<textarea placeholder="Wiadomość"></textarea><br>
+
+<button class="btn">Wyślij</button>
+</div>
+</section>
+
+<footer>
+© 2026 FoodCrew
+</footer>
+
+</body>
+</html>
